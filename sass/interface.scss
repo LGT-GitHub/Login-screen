@@ -1,0 +1,156 @@
+html,body,div,img,a,li,ul,p,i{
+    padding: 0;
+    margin: 0;
+}
+
+ul,li{
+    list-style: none;
+}
+
+// 登录界面
+body{
+    background: url(../img/wallpaper.jpg) no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed; 
+}
+
+.log-in{
+    width: 347px;
+    height: 429px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 10px 35px;
+    background-color: #fff;
+    border: 5px #aaa solid;
+    margin: 82px auto;
+    p{
+        margin:24px 0;
+    }
+    .number,.userpwd{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 8px 5px;
+        padding-left: 33px;
+        background: 1px lightslategray solid;
+        border-radius: 5px;
+        background: url(../img/user.png) no-repeat 3px center / 22px;
+    }
+    .userpwd{
+        background-image: url(../img/lock.png);
+    }
+    .Click-on{
+    .Board,#registered{
+        width: 80px;
+        height: 34px;
+        font-size: 18px;
+        float: right;
+        margin: 12px auto;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: #013fa4;
+    }
+    #registered{
+        float: left;
+        background-color: #e4393c;
+    }
+    }
+    div{
+        font-size: .77em;
+        text-align: right;
+        padding-right: 10px;
+        margin-top: 9em;
+    }
+    .other{
+        margin-top: 20px;
+        .box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .List{
+            flex: 0 0 36px;
+            font-size: 16px;
+            height: 47px;
+            a{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+        }
+    }
+}
+
+// 注册界面
+#registeredpage{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+    .modal{
+        width: 500px;
+        height: 350px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -250px;
+        animation: animate 1s;
+        .modal-header{
+            height: 50px;
+            background: white;
+            color: #000;
+            line-height: 50px;
+            border-bottom: 1px solid #000000;
+            p{
+                display: inline-block;
+                margin: 0;
+                position: absolute;
+                left: 20px;
+            }
+            .close{
+                position: absolute;
+                right: 20px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+        .modal-content{
+            background: white;
+            height: 230px;          
+            .account,.secret,.article{
+                height: 60px;
+                line-height: 60px;
+                padding-left: 120px;
+                font-size: 20px;
+                .student-ID,.login-password{
+                    font-size: 20px;
+                }
+                .affirm{
+                    width: 288px;
+                    height: 40px;
+                    font-size: 20px;
+                    color: #ffff;
+                    cursor: pointer;
+                    background-image: linear-gradient(to left,#ff4001, #ffca7e);
+                }
+            }
+        }
+    }
+}
+/*添加动画*/
+@keyframes animate {
+    from {
+      top: 0;
+      opacity: 0
+    }
+  
+    to {
+      top: 50%;
+      opacity: 1
+    }
+  }

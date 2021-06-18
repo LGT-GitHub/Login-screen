@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生信息管理系统</title>
+    <link rel="stylesheet" href="./sass/class.css">
+    <script src="./js/管理页面.js"></script>
+</head>
+
+<body>
+    <div class="Inquire">
+        <div class="information">
+            <table>
+                <thead>
+                    <tr id="book">
+                        <th>学号</th>
+                        <th>姓名</th>
+                        <th>年龄</th>
+                        <th>性别</th>
+                        <th>地区</th>
+                        <th>专业</th>
+                        <th>班级</th>
+                        <th>民族</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10001</td>
+                        <td>张三</td>
+                        <td>23</td>
+                        <td>男</td>
+                        <td>江苏</td>
+                        <td>计算机</td>
+                        <td>计网1班</td>
+                        <td>汉族</td>
+                        <td>
+                            <button>移除</button>
+                            <button id="reset">修改</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10002</td>
+                        <td>李四春</td>
+                        <td>28</td>
+                        <td>男</td>
+                        <td>湛江</td>
+                        <td>计算机</td>
+                        <td>计网2班</td>
+                        <td>汉族</td>
+                        <td>
+                            <button>移除</button>
+                            <button>修改</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10003</td>
+                        <td>李梅</td>
+                        <td>21</td>
+                        <td>女</td>
+                        <td>浙江</td>
+                        <td>绘画艺术</td>
+                        <td>艺术1班</td>
+                        <td>汉族</td>
+                        <td>
+                            <button>移除</button>
+                            <button>修改</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10004</td>
+                        <td>王五</td>
+                        <td>20</td>
+                        <td>男</td>
+                        <td>北京</td>
+                        <td>金融</td>
+                        <td>金融3班</td>
+                        <td>汉族</td>
+                        <td>
+                            <button>移除</button>
+                            <button>修改</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10005</td>
+                        <td>李春丽</td>
+                        <td>21</td>
+                        <td>女</td>
+                        <td>上海</td>
+                        <td>工商管理</td>
+                        <td>商业2班</td>
+                        <td>汉族</td>
+                        <td>
+                            <button>移除</button>
+                            <button>修改</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="character">
+            <input type="text" placeholder="按姓名查询" key="username">
+            <button>查询</button>
+            <button id="increase">增加学生信息</button>
+        </div>
+
+        <form action="" id="information">
+            <table class="hide">
+                <thead border="1" cellpadding="0" cellspacing="0">
+                    <th colspan="2" align="center">用户信息添加表
+                        <button class="down"><span class="label">关闭 &times;</span></button>
+                    </th>
+                </thead>
+                <tr>
+                    <td>姓名</td>
+                    <td><input type="text" id="Marquee"></td>
+                </tr>
+                <tr>
+                    <td>学号</td>
+                    <td><input type="text" id="Marquee"></td>
+                </tr>
+                <tr>
+                    <td>年龄</td>
+                    <td><input type="text" id="Marquee"></td>
+                </tr>
+                <tr>
+                    <td>性别</td>
+                    <td>
+                        <input type="radio" name="identity" />男
+                        <input type="radio" name="identity" />女
+                    </td>
+                </tr>
+                <tr>
+                    <td>地区</td>
+                    <td><input type="text" id="Marquee"></td>
+                </tr>
+                <tr>
+                    <td>专业</td>
+                    <td><input type="text" id="Marquee"></td>
+                </tr>
+                <tr>
+                    <td>班级</td>
+                    <td><input type="text" id="Marquee"></td>
+                </tr>
+                <tr>
+                    <td>名族</td>
+                    <td><input type="text" id="Marquee"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" id="submit" value="提交" />
+                        <input type="button" id="reset" onclick="formReset()" value="重置" />
+                    </td>
+                </tr>
+            </table>
+    </div>
+    </form>
+
+    <script>
+        function formReset() {
+            document.getElementById('information').reset();
+        };
+    </script>
+</body>
+
+</html>
